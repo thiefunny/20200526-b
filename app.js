@@ -1,25 +1,11 @@
-// const przycisk = document.querySelector(".przycisk");
-// const przycisk2 = document.querySelector(".przycisk2");
-// const trzyEl = document.querySelector(".trzy");
-// const brawo = document.querySelector(".brawo");
+const divEl = document.querySelector("div");
+const buttonEl = document.querySelector("button");
 
-// przycisk.onclick = function() {
-//     przycisk2.classList.toggle("none");
-// }
+for (i of divEl.children) {
+    i.style.color = "#f00";
+    console.log(i)
+}
 
-// przycisk2.onclick = function() {
-//     przycisk.classList.toggle("none");
-
-// }
-
-// trzyEl.onmouseover = function() {
-//     brawo.classList.remove("none");
-// }
-
-const button = document.querySelector("button");
-
-// button.style.color = "#f00";
-
-button.setAttribute("onclick", "function() {}");
-
-console.log(button.getAttribute("style"));
+for (let x = 0; x < 4; x++) {
+    divEl.children[x].style.width = (x + 1) * 100 + "px";
+}
